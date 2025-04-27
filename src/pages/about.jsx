@@ -4,6 +4,7 @@ import { ImEmbed } from "react-icons/im";
 import { FaUserGraduate } from "react-icons/fa6";
 import { GoGoal } from "react-icons/go";
 import Spotlight from "../component/ui/Spotlight";
+import  PinContainer  from "../component/ui/3d-pin";
 
 export default function About() {
     return (
@@ -22,11 +23,27 @@ export default function About() {
                 </p>
 
                 <div className=" flex flex-col md:flex-row justify-between items-center gap-10 mt-10 w-full max-w-6xl px-4">
-                    <div className=" bg-white/10 flex p-4 rounded-lg w-full md:w-1/2 justify-center">
+                    {/* <div className=" bg-white/10 flex p-4 rounded-lg w-full md:w-1/2 justify-center">
                         <div className="bg-white/20 h-72 w-full rounded-lg max-w-md"></div>
-                    </div>
+                    </div> */}
 
-                    <div className="w-full md:w-1/2">
+                    <div className="h-[40rem] w-full flex items-center justify-center">
+                          <PinContainer title="poke-me"  href="https://purple-deloria-92.tiiny.site" target="_blank" rel="noopener noreferrer">
+                            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
+                              <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-slate-100">
+                               Resume Inside
+                              </h3>
+                              <div className="text-base m-0 p-0 font-normal">
+                                <span className="text-slate-500">
+                                  For my updated resume come here
+                                </span>
+                              </div>
+                              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                            </div>
+                          </PinContainer>
+                        </div>
+
+                    <div className="w-full ">
                         <p className="text-white font-semibold text-2xl sm:text-3xl mb-4">Hi,</p>
                         <p className="text-white/40 text-base sm:text-lg leading-relaxed">
                             I'm <span className="font-semibold text-purple-400">Sumit S</span>, a final-year B.Tech Computer Science & Engineering student obsessed with building cool web experiences. <br />

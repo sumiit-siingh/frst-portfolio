@@ -18,7 +18,6 @@ function App() {
           <Route path="/" element={<Homepage/>}/>
           <Route path="/home" element={<Homepage/>}/>
           <Route path="/about me" element={<About/>}/>
-          {/* <Route path="/spotlightPreview" element={<SpotlightPreview/>}/> */}
         </Route>
       </Routes>
     </Router>
