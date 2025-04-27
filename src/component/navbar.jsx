@@ -52,7 +52,7 @@ const Navbar = () => {
 
             {/* Desktop menu */}
             <div className="hidden md:flex max-w-[100%] text-[15px] gap-16 justify-around">
-                {["Home", "About me", "Skills", "Projects", "Resume", "Contact"].map((item, i) => (
+                {["Home", "About me",  "Projects", "Contact"].map((item, i) => (
                     <div
                         key={i}
                         className="cursor-pointer text-white text-outline transition duration-300 hover:-translate-y-1 hover:scale-110 hover:border-b-2"
@@ -73,8 +73,8 @@ const Navbar = () => {
                 </button>
             </div>
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-white/20 flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
-                    {["Home","About me", "Skills", "Projects", "Resume", "Contact"].map((item, i) => (
+                <div className="md:hidden bg-black flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
+                    {["Home","About me",  "Projects", "Contact"].map((item, i) => (
                         <div
                             key={i}
                             className="cursor-pointer text-lg"
@@ -88,13 +88,13 @@ const Navbar = () => {
                     ))}
 
                     <div className="flex  flex-col gap-3 w-full items-center justify-center">
-                        <button className="w-10 cursor-pointer text-white py-2 bg-[#e56023] flex items-center justify-center rounded-full font-medium" onClick={() => {
+                        <button className="w-10 cursor-pointer text-white py-2  flex items-center justify-center rounded-full font-medium" onClick={() => {
                             window.open("https://www.linkedin.com/in/sumitkrsinghh/");
                             setIsMobileMenuOpen(false);
                         }}>
                             <FaLinkedin />
                         </button>
-                        <button className="w-10 cursor-pointer text-white py-2 bg-black border flex items-center justify-center border-white rounded-full font-medium" onClick={() => {
+                        <button className="w-10 cursor-pointer text-white py-2  flex items-center justify-center  rounded-full font-medium" onClick={() => {
                             window.open('https://github.com/sumiit-siingh');
                             setIsMobileMenuOpen(false);
                         }}>

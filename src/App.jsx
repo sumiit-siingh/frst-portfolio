@@ -6,6 +6,7 @@ import Layout from "./layout";
 import './index.css';
 import './component/ui/Spotlight'
 import About from './pages/about'
+import Text from "./pages/text"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Homepage/>}/>
           <Route path="/home" element={<Homepage/>}/>
           <Route path="/about me" element={<About/>}/>
+          <Route path="/text" element={<Text/>}/>
         </Route>
       </Routes>
     </Router>

@@ -57,18 +57,18 @@ export default function Homepage() {
         >
           {/* Bars behind */}
           <div className="absolute inset-0 flex flex-col justify-center items-center space-y-3 z-0">
-            <div className="bg-white/50 h-3 w-full rounded-full"></div>
-            <div className="bg-white/40 h-3 w-full rounded-full"></div>
-            <div className="bg-white/30 h-3 w-full rounded-full"></div>
-            <div className="bg-white/20 h-3 w-full rounded-full"></div>
-            <div className="bg-white/10 h-3 w-full rounded-full"></div>
+            <div className="bg-white/50 h-5 w-70 rounded-full"></div>
+            <div className="bg-white/40 h-5 w-60 rounded-full"></div>
+            <div className="bg-white/30 h-5 w-50  rounded-full"></div>
+            <div className="bg-white/20 h-5 w-40 rounded-full"></div>
+            <div className="bg-white/10 h-5 w-30 rounded-full"></div>
           </div>
 
           {/* Image */}
           <img
             src="https://res.cloudinary.com/dq829orud/image/upload/v1745453701/1_e0nrit.png"
             alt="Profile"
-            className="relative z-10 w-full h-auto object-contain rounded-md"
+            className="relative z-10 w-full h-100 object-contain rounded-md"
           />
         </motion.div>
       </div>

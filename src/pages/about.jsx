@@ -4,8 +4,8 @@ import { ImEmbed } from "react-icons/im";
 import { FaUserGraduate } from "react-icons/fa6";
 import { GoGoal } from "react-icons/go";
 import Spotlight from "../component/ui/Spotlight";
-import  PinContainer  from "../component/ui/3d-pin";
-
+import PinContainer from "../component/ui/3d-pin";
+import { CardContainer, CardBody, CardItem } from "../component/ui/3d-card";
 export default function About() {
     return (
         <div className="relative min-h-screen w-full overflow-hidden bg-black/[0.96] antialiased flex flex-col items-center justify-start">
@@ -22,26 +22,26 @@ export default function About() {
                     I'm a Computer Science student passionate about creating innovative solutions through programming & technology.
                 </p>
 
-                <div className=" flex flex-col md:flex-row justify-between items-center gap-10 mt-10 w-full max-w-6xl px-4">
+                <div className=" flex flex-col md:flex-row justify-between items-center gap-10  w-full max-w-6xl px-4 mt-[-120px]">
                     {/* <div className=" bg-white/10 flex p-4 rounded-lg w-full md:w-1/2 justify-center">
                         <div className="bg-white/20 h-72 w-full rounded-lg max-w-md"></div>
                     </div> */}
 
                     <div className="h-[40rem] w-full flex items-center justify-center">
-                          <PinContainer title="poke-me"  href="https://purple-deloria-92.tiiny.site" target="_blank" rel="noopener noreferrer">
+                        <PinContainer title="poke-me" href="https://purple-deloria-92.tiiny.site" target="_blank" rel="noopener noreferrer">
                             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
-                              <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-slate-100">
-                               Resume Inside
-                              </h3>
-                              <div className="text-base m-0 p-0 font-normal">
-                                <span className="text-slate-500">
-                                  For my updated resume come here
-                                </span>
-                              </div>
-                              <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+                                <h3 className="max-w-xs pb-2 m-0 font-bold text-base text-slate-100">
+                                    Resume Inside
+                                </h3>
+                                <div className="text-base  font-normal">
+                                    <span className="text-slate-500">
+                                        For my updated resume come here
+                                    </span>
+                                </div>
+                                <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
                             </div>
-                          </PinContainer>
-                        </div>
+                        </PinContainer>
+                    </div>
 
                     <div className="w-full ">
                         <p className="text-white font-semibold text-2xl sm:text-3xl mb-4">Hi,</p>
@@ -52,8 +52,54 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <div><a className="text-white text-xl  font-bold text-outline">More About me</a></div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:w-full mx-auto">
+
+                <div className="w-full  flex flex-wrap flex-col items-center justify-center mt-[-100px] ">
+                    <div className="text-white text-2xl font-bold text-outline">Hands on Skills</div>
+                    <div className="text-white/40 text-outline ">These are the technologies and programming languages I've worked with and continue to develop expertise in.</div>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-6 justify-center">
+                    {[
+                        { skill: "HTML", level: "Advanced" },
+                        { skill: "CSS", level: "Advanced" },
+                        { skill: "JavaScript", level: "Advanced" },
+                        { skill: "React.js", level: "Advanced" },
+                        { skill: "Tailwind css", level: "Advanced" },
+                        { skill: "Vite", level: "Advanced" },
+                        { skill: "Java", level: "Intermediate" },
+                        { skill: "OOPS", level: "Intermediate" },
+                        { skill: "DBMS", level: "Intermediate" },
+                        { skill: "MySQL", level: "Intermediate" },
+                    ].map((item, index) => (
+                        <CardContainer key={index} className="inter-var p-5 mt-[-90px]" style={{ perspective: 1500 }}>
+                            <CardBody className="bg-white/10 backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-white/10 dark:border-white/[0.2] border-white/[0.1] w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
+
+                                {/* Inner div for floating content */}
+                                <div className="flex flex-col items-center justify-center gap- 3">
+                                    <CardItem
+                                        translateZ={150}
+                                        className="text-lg md:text-xl font-bold text-neutral-100 dark:text-white text-center"
+                                    >
+                                        {item.skill}
+                                    </CardItem>
+
+                                    <CardItem
+                                        translateZ={200}
+                                        as="p"
+                                        className="text-purple-400 text-sm md:text-md bg-white/10 rounded-full px-3 py-1 text-center"
+                                    >
+                                        {item.level}
+                                    </CardItem>
+                                </div>
+
+                            </CardBody>
+                        </CardContainer>
+                    ))}
+                </div>
+
+
+
+                <div><a className="text-white text-xl font-bold text-outline">More About me</a></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 pb-15 gap-5 md:w-full mx-auto">
                     {[
                         {
                             icon: <IoPersonOutline />,
@@ -98,7 +144,7 @@ export default function About() {
                     ].map((item, index) => (
                         <div
                             key={index}
-                            className="flex flex-col gap-6 p-6 bg-[#1f2937] rounded-xl shadow-lg text-gray-200 hover:scale-105 transition-transform cursor-pointer hover:shadow-md hover:shadow-purple-400"
+                            className="flex flex-col gap-6 p-6 bg-[#282b30] rounded-xl shadow-lg text-gray-200 hover:scale-105 transition-transform cursor-pointer hover:shadow-md hover:shadow-purple-400"
                         >
                             <div className="flex items-center gap-4">
                                 <div className="bg-[#374151] p-3 rounded-lg text-2xl text-purple-400">
@@ -116,6 +162,7 @@ export default function About() {
                         </div>
                     ))}
                 </div>
+
 
 
             </div>
