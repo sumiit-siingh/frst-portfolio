@@ -65,15 +65,15 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="hidden md:flex gap-4">
-                <button className="text-whi te cursor-pointer py-2 bg-wh ite  rounded-full font-medium hover:scale-105" onClick={() => navigate('https://www.linkedin.com/in/sumitkrsinghh/')}>
-                    <FaLinkedin className='text-blue-600 text-xl bg-white ' />
+                <button className="text-whi te cursor-pointer py-2 bg-wh ite  rounded-full font-medium hover:scale-105 " onClick={() => navigate('https://www.linkedin.com/in/sumitkrsinghh/')}>
+                    <FaLinkedin className='text-white text-xl rounded bg-white/20  ' />
                 </button>
                 <button className="text-white bg-wh ite cursor-pointer px-6 py-2  rounded-full font-medium hover:scale-105" onClick={() => navigate('https://github.com/sumiit-siingh')}>
                     <FaGithub className='text-xl text-white' />
                 </button>
             </div>
             {isMobileMenuOpen && (
-                <div className="md:hidden flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
+                <div className="md:hidden bg-white/20 flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
                     {["Home","About me", "Skills", "Projects", "Resume", "Contact"].map((item, i) => (
                         <div
                             key={i}
