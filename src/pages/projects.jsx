@@ -20,7 +20,7 @@ export default function () {
                     </div>
                 </div>
 
-                <div className="mt-5 text-6xl text-white text-center font-bold text-outline">My Projects</div>
+                <div className="mt-5 text-6xl text-white text-center font-bold text-outline font-poppins-regular">My Projects</div>
                 <div className="text-white/30 text-center mt-5 text-xl text-outline">Explore a collection of my recent work across various technologies and domains.</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                     {[
@@ -86,8 +86,8 @@ export default function () {
 
 
                                     {/* Tools */}
-                                    <CardItem className="mt-2 text-neutral-400 text-outline">
-                                        <strong className="">Tools: </strong>{item.tools}
+                                    <CardItem className="mt-2 text-neutral-400 text-outline font-poppins-regular">
+                                        <strong className="">Tools : </strong>{item.tools}
                                     </CardItem>
 
                                     {/* GitHub Link */}

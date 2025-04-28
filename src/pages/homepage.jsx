@@ -20,8 +20,8 @@ export default function Homepage() {
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 mt-20 px-6 md:px-20 w-full">
         
         {/* Left Text */}
-        <div className="flex flex-col items-start space-y-4 text-center md:text-left">
-          <motion.span className="text-white/70 text-2xl font-extrabold">
+        <div className="flex flex-col items-start space-y-4 text-center md:text-left mt-10">
+          <motion.span className="text-white/70 text-2xl font-extrabold ">
             Hello I'm,
           </motion.span>
 
@@ -34,7 +34,7 @@ export default function Homepage() {
               repeatType: "loop",
               repeatDelay: 2,
             }}
-            className="text-white text-4xl md:text-6xl font-titan-one-regular"
+            className="text-white text-4xl md:text-6xl font-bold font-poppins-regular text-outline"
           >
             Sumit Kr. Singh
           </motion.h1>

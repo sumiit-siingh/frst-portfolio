@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 
+
 const Navbar = () => {
     const navigate = useNavigate()
     const [isHover, setIsHover] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`h-20 w-full flex items-center justify-around font-[Poppins]  px-4 z-[100] fixed top-0 left-0 select-none transition-all duration-300  bg-gradient-to-r from-gray-700 via-gray-900 to-black ${scrolled ? "bg-black/90 shadow-md backdrop-blur" : "bg-transparent"}`}
+            className={`h-20 w-full flex items-center justify-around font-[Poppins]  px-4 z-[100] fixed top-0 left-0 select-none transition-all duration-300 mt-2  ${scrolled ? "bg-black/90 shadow-md backdrop-blur" : "bg-transparent"}`}
         >
             {/* Logo */}
             <div
@@ -39,9 +40,17 @@ const Navbar = () => {
                         <span>rld</span>
                     </span>
                 ) : (
-                    <span className="text-white font-beau-rivage-regular text-5xl  text-outline">
-                        Sumit
-                    </span>
+                    // <span className="text-white font-beau-rivage-regular text-5xl  text-outline">
+                    //     Sumit
+                    // </span>
+                    <div className="relative w-30 h-12 border-5 border-white/20 rounded-full -rotate-35 ">
+                        <div className="absolute inset-0 flex items-center justify-center rotate-35">
+                            <h1 className="text-white font-beau-rivage-regular text-7xl text-outline">Sumit</h1>
+                        </div>
+                    </div>
+
+
+
                 )}
             </div>
 
@@ -52,7 +61,7 @@ const Navbar = () => {
 
             {/* Desktop menu */}
             <div className="hidden md:flex max-w-[100%] text-[15px] gap-16 justify-around">
-                {["Home", "About me",  "Projects", "Contact"].map((item, i) => (
+                {["Home", "About me", "Projects", "Contact"].map((item, i) => (
                     <div
                         key={i}
                         className="cursor-pointer text-white text-outline transition duration-300 hover:-translate-y-1 hover:scale-110 hover:border-b-2"
@@ -74,7 +83,7 @@ const Navbar = () => {
             </div>
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-black flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
-                    {["Home","About me",  "Projects", "Contact"].map((item, i) => (
+                    {["Home", "About me", "Projects", "Contact"].map((item, i) => (
                         <div
                             key={i}
                             className="cursor-pointer text-lg"
@@ -98,7 +107,7 @@ const Navbar = () => {
                             window.open('https://github.com/sumiit-siingh');
                             setIsMobileMenuOpen(false);
                         }}>
-                           <FaGithub />
+                            <FaGithub />
                         </button>
                     </div>
                 </div>
