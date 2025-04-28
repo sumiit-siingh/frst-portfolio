@@ -71,10 +71,10 @@ export default function About() {
                         { skill: "MySQL", level: "Intermediate" },
                     ].map((item, index) => (
                         <CardContainer key={index} className="inter-var p-5 mt-[-90px]" style={{ perspective: 1500 }}>
-                            <CardBody className="bg-white/10 backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-white/10 dark:border-white/[0.2] border-white/[0.1] w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
+                            <CardBody className=" backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-[#282b30] dark:border-white/[0.2] border-white/[0.1] w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
 
                                 {/* Inner div for floating content */}
-                                <div className="flex flex-col items-center justify-center gap- 3">
+                                <div className="flex flex-col items-center justify-center gap-3">
                                     <CardItem
                                         translateZ={150}
                                         className="text-lg md:text-xl font-bold text-neutral-100 dark:text-white text-center"
