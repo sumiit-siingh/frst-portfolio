@@ -53,11 +53,11 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="w-full  flex flex-wrap flex-col items-center justify-center mt-[-100px] ">
+                <div className="w-full  flex flex-wrap flex-col items-center justify-center md:mt-[-100px]  ">
                     <div className="text-white text-2xl font-bold text-outline">Hands on Skills</div>
-                    <div className="text-white/40 text-outline ">These are the technologies and programming languages I've worked with and continue to develop expertise in.</div>
+                    <div className="text-white/40 text-outline mt-10 ">These are the technologies and programming languages I've worked with and continue to develop expertise in.</div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-6 justify-center">
+                <div className="grid grid-cols-2 md:mt-15 mt-20 md:grid-cols-5 gap-6 justify-between items-center">
                     {[
                         { skill: "HTML", level: "Advanced" },
                         { skill: "CSS", level: "Advanced" },
@@ -70,7 +70,7 @@ export default function About() {
                         { skill: "DBMS", level: "Intermediate" },
                         { skill: "MySQL", level: "Intermediate" },
                     ].map((item, index) => (
-                        <CardContainer key={index} className="inter-var p-5 mt-[-90px]" style={{ perspective: 1500 }}>
+                        <CardContainer key={index} className="inter-var  mt-[-180px]" style={{ perspective: 1500 }}>
                             <CardBody className=" backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-white/20 dark:border-white/[0.2] border-white/[0.1] w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
 
                                 {/* Inner div for floating content */}
