@@ -65,13 +65,14 @@ export default function About() {
                         { skill: "React.js", level: "Advanced" },
                         { skill: "Tailwind css", level: "Advanced" },
                         { skill: "Vite", level: "Advanced" },
-                        { skill: "Java", level: "Intermediate" },
-                        { skill: "OOPS", level: "Intermediate" },
-                        { skill: "DBMS", level: "Intermediate" },
-                        { skill: "MySQL", level: "Intermediate" },
+                        { skill: "Java", level: "Advanced" },
+                        { skill: "OOPS", level: "Advanced" },
+                        // { skill: "DBMS", level: "Adcanced" },
+                        { skill: "MySQL", level: "Advanced" },
+                        { skill: "SpringBoot", level: "Intermediate" },
                     ].map((item, index) => (
                         <CardContainer key={index} className="inter-var  mt-[-180px]" style={{ perspective: 1500 }}>
-                            <CardBody className=" backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-white/20 dark:border-white/[0.2] border-white/[0.1] w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
+                            <CardBody className=" backdrop-blur-sm relative group/card hover:scale-115 transition-transform duration-500 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-white/10 dark:border-white/[0.2] border-purple-300 w-40 h-25 md:w-48 md:h-28 rounded-xl  border flex items-center justify-center ">
 
                                 {/* Inner div for floating content */}
                                 <div className="flex flex-col items-center justify-center gap-3">
@@ -85,7 +86,7 @@ export default function About() {
                                     <CardItem
                                         translateZ={200}
                                         as="p"
-                                        className="text-purple-400 text-sm md:text-md bg-white/10 rounded-full px-3 py-1 text-center"
+                                        className="text-purple-400 text-sm md:text-md bg-black/50 rounded-full px-3 py-1 text-center"
                                     >
                                         {item.level}
                                     </CardItem>

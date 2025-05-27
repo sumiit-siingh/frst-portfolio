@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`h-20 w-full flex items-center justify-around font-[Poppins]  px-4 z-[100] fixed top-0 left-0 select-none transition-all duration-300 mt-2  ${scrolled ? "bg-black/90 shadow-md backdrop-blur" : "bg-transparent"}`}
+            className={`h-20 w-full flex items-center justify-around font-[Poppins]  px-4 z-[100] fixed top-0 left-0 select-none transition-all duration-300 mt-2 rounded-full   ${scrolled ? " shadow-md backdrop-blur" : "bg-transparent"}`}
         >
             {/* Logo */}
             <div
@@ -75,7 +75,7 @@ const Navbar = () => {
             {/* Buttons */}
             <div className="hidden md:flex gap-4">
                 <button className="text-whi te cursor-pointer py-2 bg-wh ite  rounded-full font-medium hover:scale-105 " onClick={() => navigate('https://www.linkedin.com/in/sumitkrsinghh/')}>
-                    <FaLinkedin className='text-white text-xl rounded bg-white/20  ' />
+                    <FaLinkedin className='text-white  text-xl rounded bg-black p-0  ' />
                 </button>
                 <button className="text-white bg-wh ite cursor-pointer px-6 py-2  rounded-full font-medium hover:scale-105" onClick={() => navigate('https://github.com/sumiit-siingh')}>
                     <FaGithub className='text-xl text-white' />
