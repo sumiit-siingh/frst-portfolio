@@ -28,9 +28,11 @@ export default function Contact() {
                     <div className="text-white/40">I'd love to hear from you. Whether you have a question, proposal, or just want to say hi.</div>
                     <div className="flex bg-white/10 mt-3 p-3">
                         <div className="flex items-center justify-center">
-
+                          <a href="mailto:sumitsinghsakarari@gmail.com">
                             <MdOutlineMail className="text-5xl bg-white/20 rounded-full p-2 w-fit text-[#f43b57] " />
+                             </a>
                         </div>
+                       
                         <div className="flex flex-col ml-4">
                             <div className="text-white font-poppins-regular text-xl font-semibold  text-outline">Email</div>
                             <div className="text-white/40 font-poppins-regular ">sumitsinghsakarari@gmail.com</div>
@@ -38,14 +40,16 @@ export default function Contact() {
                     </div>
                     <div className="flex bg-white/10 mt-3 p-3">
                         <div className="flex items-center justify-center">
-
-                            <IoCallOutline className="text-5xl bg-white/20 rounded-full p-2 w-fit text-green-400 " />
+                            <a href="tel:+918887605464">
+                                <IoCallOutline className="text-5xl bg-white/20 rounded-full p-2 w-fit text-green-400" />
+                            </a>
                         </div>
                         <div className="flex flex-col ml-4">
-                            <div className="text-white font-poppins-regular text-xl font-semibold text-outline ">Phone</div>
-                            <div className="text-white/40 font-poppins-regular ">+91 8887605464</div>
+                            <div className="text-white font-poppins-regular text-xl font-semibold text-outline">Phone</div>
+                            <div className="text-white/40 font-poppins-regular">+91 8887605464</div>
                         </div>
                     </div>
+
                     <div className="flex bg-white/10 mt-3 p-3">
                         <div className="flex items-center justify-center">
 
