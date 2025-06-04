@@ -82,7 +82,7 @@ const Navbar = () => {
                 </button>
             </div>
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-bl ack flex flex-col items-center  text-white py-4 space-y-4 absolute top-0 left-110 w-fit z-[99] cursor-pointer">
+                <div className="md:hidden bg-bl ack flex flex-col items-center  text-white py-4 space-y-4 absolute top-0 left-100 w-fit z-[99] cursor-pointer">
                     {["🏠", "🙋‍♂️", "🗂️", "📞"].map((item, i) => {
                         const routes = ["/home", "/about%20me", "/projects", "/contact"];
 
