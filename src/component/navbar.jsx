@@ -80,7 +80,7 @@ const Navbar = () => {
                     animate={{ x: "0%", opacity: 1 }}
                     exit={{ x: "100%", opacity: 0 }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="fixed top-20 right-0 z-[9999] w-1/6 max-w-xs bg-black text-white py-4 rounded-l-3xl flex flex-col items-center space-y-4 md:hidden"
+                    className="fixed top-20 right-0 z-[9999] w-1/8 max-w-xs backdrop-blur-xl bg-white text-white py-4 rounded-l-3xl flex flex-col items-center space-y-4 md:hidden "
                 >
                     {["🏠", "🙋‍♂️", "🗂️", "📞"].map((item, i) => {
                         const routes = ["/home", "/about-me", "/projects", "/contact"];
@@ -99,13 +99,13 @@ const Navbar = () => {
                     })}
 
                     <div className="flex flex-col gap-3 w-full items-center justify-center">
-                        <button className="w-10 cursor-pointer text-white py-2 flex items-center justify-center rounded-full font-medium" onClick={() => {
+                        <button className="w-10 text-xl cursor-pointer text-blue-800 py-2 flex items-center justify-center rounded-full font-medium" onClick={() => {
                             window.open("https://www.linkedin.com/in/sumitkrsinghh/");
                             setIsMobileMenuOpen(false);
                         }}>
                             <FaLinkedin />
                         </button>
-                        <button className="w-10 cursor-pointer text-white py-2 flex items-center justify-center rounded-full font-medium" onClick={() => {
+                        <button className="w-10 text-xl cursor-pointer text-black py-2 flex items-center justify-center rounded-full font-medium" onClick={() => {
                             window.open("https://github.com/sumiit-siingh");
                             setIsMobileMenuOpen(false);
                         }}>

@@ -73,7 +73,7 @@ export default function Homepage() {
           <img
             src="https://res.cloudinary.com/dq829orud/image/upload/v1745453701/1_e0nrit.png"
             alt="Profile"
-            className="relative z-10  md:w-full w-190 h-95 border-b-4 border-green-500 rounded-full object-cover "
+            className="relative z-10  md:w-full w-190 h-95 border-b-4 border-white/20 rounded-full object-cover "
           />
         </motion.div>
       </div>
