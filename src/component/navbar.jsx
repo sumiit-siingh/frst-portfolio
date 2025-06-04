@@ -74,7 +74,7 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="hidden md:flex gap-4">
-                <button className="text-whi te cursor-pointer py-2 bg-wh ite  rounded-full font-medium hover:scale-105 " onClick={() => navigate('https://www.linkedin.com/in/sumitkrsinghh/')}>
+                <button className=" cursor-pointer py-2  rounded-full font-medium hover:scale-105 " onClick={() => navigate('https://www.linkedin.com/in/sumitkrsinghh/')}>
                     <FaLinkedin className='text-white  text-xl rounded bg-black p-0  ' />
                 </button>
                 <button className="text-white bg-wh ite cursor-pointer px-6 py-2  rounded-full font-medium hover:scale-105" onClick={() => navigate('https://github.com/sumiit-siingh')}>
@@ -82,19 +82,23 @@ const Navbar = () => {
                 </button>
             </div>
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-black flex flex-col items-center  text-white py-4 space-y-4 absolute top-20 left-0 w-full z-[99] cursor-pointer">
-                    {["Home", "About me", "Projects", "Contact"].map((item, i) => (
-                        <div
-                            key={i}
-                            className="cursor-pointer text-lg"
-                            onClick={() => {
-                                navigate(`/${item.toLowerCase()}`);
-                                setIsMobileMenuOpen(false); // Close menu after click
-                            }}
-                        >
-                            {item}
-                        </div>
-                    ))}
+                <div className="md:hidden bg-bl ack flex flex-col items-center  text-white py-4 space-y-4 absolute top-0 left-110 w-fit z-[99] cursor-pointer">
+                    {["🏠", "🙋‍♂️", "🗂️", "📞"].map((item, i) => {
+                        const routes = ["/home", "/about%20me", "/projects", "/contact"];
+
+                        return (
+                            <div
+                                key={i}
+                                className="cursor-pointer text-lg"
+                                onClick={() => {
+                                    navigate(routes[i]); 
+                                    setIsMobileMenuOpen(false); 
+                                }}
+                            >
+                                {item}
+                            </div>
+                        );
+                    })}
 
                     <div className="flex  flex-col gap-3 w-full items-center justify-center">
                         <button className="w-10 cursor-pointer text-white py-2  flex items-center justify-center rounded-full font-medium" onClick={() => {

@@ -20,7 +20,7 @@ export default function Contact() {
                 <Spotlight className="top-0 left-0 md:-top-10 md:left-40" fill="white" />
                 <div className="relative mt-30 flex flex-col items-center justify-center">
                     <div className="text-white bg-white/20 pl-4 pr-4 p-1 rounded-full ">Get in touch</div>
-                    <div className="text-white text-5xl font-bold mt-5">Contact Me</div>
+                    <div className="text-white text-3xl font-bold mt-5">Contact Me</div>
                     <div className="text-white/40  text-center mt-5">Feel free to reach out to me for collaboration, questions, or just to say hello. I'm open to discussing new projects, creative ideas, or opportunities.</div>
                 </div>
                 <div className=" relative bg-[#282b30] mt-10 p-5">
