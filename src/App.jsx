@@ -13,14 +13,12 @@ import Contact from "./pages/contact";
 function App() {
   return (
     <Router>
-      {/* <Layout/> */}
+     
       <Routes>
         <Route path="/" element={<Layout/>}>
-          {/* <Route path="/homepage" element={<Homepage/>}/> */}
           <Route path="/" element={<Homepage/>}/>
           <Route path="/home" element={<Homepage/>}/>
           <Route path="/about-me" element={<About/>}/>
-          {/* <Route path="/text" element={<Text/>}/> */}
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Route>
