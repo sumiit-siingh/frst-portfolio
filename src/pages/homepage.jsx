@@ -26,8 +26,8 @@ export default function Homepage() {
 
         {/* Left Text */}
         <div className="flex flex-col items-start space-y-4 text-center md:text-left mt-10">
-          <motion.span className="text-white/70 text-2xl font-extrabold ">
-            Hello I'm,
+          <motion.span className="text-white/70 md:text-xl text-lg font-extrabold ">
+            Hola, I'm
           </motion.span>
 
           <motion.h1
@@ -39,17 +39,17 @@ export default function Homepage() {
               // repeatType: null,
               repeatDelay: 2,
             }}
-            className="text-white text-4xl md:text-6xl font-bold font-poppins-regular text-outline"
+            className="text-white text-4xl md:text-5xl font-bold font-poppins-regular text-outline"
           >
-            Sumit Kr. Singh
+            Sumit 
           </motion.h1>
 
           <p className="text-white/50 text-sm md:text-lg leading-relaxed">
-            Web weaver skilled in JavaScript, React, MySQL, and Tailwind CSS.
+            Web weaver skilled in JavaScript, React, Tailwind CSS, Springboot & MySQL
             <br />
             I enjoy building clean, responsive web pages.
             <br />
-            Seeking full-time opportunities to grow as a Web or Full Stack Developer.
+            Seeking full-time opportunities to grow as a Front end or Full Stack Developer.
           </p>
         </div>
 
@@ -58,22 +58,22 @@ export default function Homepage() {
           initial={{ scale: 0, opacity: 0, y: 50 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="relative w-[200px] sm:w-[250px] md:w-[300px] aspect-[3/4] flex items-center justify-center"
+          className="relative w-[200px] sm:w-[250px] md:w-[200px] flex items-center justify-center"
         >
           {/* Bars behind */}
           <div className="absolute inset-0 flex flex-col justify-center items-center space-y-3 z-0">
-            <div className="bg-white/50 h-5 md:w-70 w-50 rounded-full"></div>
-            <div className="bg-white/40 h-5 md:w-60 w-40 rounded-full"></div>
-            <div className="bg-white/30 h-5 md:w-50 w-30  rounded-full"></div>
-            <div className="bg-white/20 h-5 md:w-40 w-20 rounded-full"></div>
-            <div className="bg-white/10 h-5 md:w-30 w-10 rounded-full"></div>
+            <div className="bg-white/50 h-5 md:w-60 w-50 rounded-full"></div>
+            <div className="bg-white/40 h-5 md:w-50 w-40 rounded-full"></div>
+            <div className="bg-white/30 h-5 md:w-40 w-30  rounded-full"></div>
+            <div className="bg-white/20 h-5 md:w-30 w-20 rounded-full"></div>
+            <div className="bg-white/10 h-5 md:w-20 w-10 rounded-full"></div>
           </div>
 
           {/* Image */}
           <img
             src="https://res.cloudinary.com/dq829orud/image/upload/v1745453701/1_e0nrit.png"
             alt="Profile"
-            className="relative z-10  md:w-full w-190 h-95 border-b-4 border-white/20 rounded-full object-cover "
+            className="relative z-10 md:mt-10   md:w-full w-190 md:h-65 h-80 border-b-4 border-white/20 rounded-full object-cover "
           />
         </motion.div>
       </div>

@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import { IoHomeOutline } from "react-icons/io5";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FaNetworkWired } from "react-icons/fa";
+import { RiContactsBook2Line } from "react-icons/ri";
+
+
+
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -19,37 +27,32 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`h-20 w-full flex items-center justify-around font-[Poppins] px-4 z-[1000] fixed top-0 left-0 select-none transition-all duration-300 mt-2 rounded-full ${scrolled ? "shadow-md backdrop-blur" : "bg-transparent"}`}>
-            
+        <div className={`h-10 w-full flex  justify-center font-[Poppins] space-x-20 z-[1000] fixed top-0 left-0 select-none transition-all duration-300 mt-8 rounded-full ${scrolled ? "" : "bg-transparent"}`}>
+
             {/* Logo */}
             <div
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
                 className="font-extrabold text-2xl transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 flex justify-around items-center"
             >
-                {isHover ? (
-                    <span className='font-limelight-regular text-white'>
-                        Hell<span className="text-red-600">o </span>W
-                        <span className="text-red-600">o</span>
-                        <span>rld</span>
-                    </span>
-                ) : (
-                    <div className="relative w-30 h-12 border-5 border-white/20 rounded-full -rotate-35 ">
-                        <div className="absolute inset-0 flex items-center justify-center rotate-35">
-                            <h1 className="text-white font-beau-rivage-regular text-7xl text-outline">Sumit</h1>
-                        </div>
+
+                
+                <div className="relative w-30 h-12 border-5 border-white/20 rounded-full -rotate-35 ">
+                    <div className="absolute inset-0 flex items-center justify-center rotate-35">
+                        <h1 className="text-white font-beau-rivage-regular text-7xl  text-outline">Sumit</h1>
                     </div>
-                )}
+                </div>
+                
             </div>
 
             {/* Hamburger icon for mobile */}
-            <div className="sm:hidden text-3xl text-white cursor-pointer" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-               {isMobileMenuOpen ? '✖' : '☰'}
+            <div className="sm:hidden text-3xl  text-white cursor-pointer" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                {isMobileMenuOpen ? '✖' : '☰'}
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex max-w-[100%] text-[15px] gap-16 justify-around">
-                {["Home", "About me", "Projects", "Contact"].map((item, i) => {
+            <div className="hidden md:flex items-center text-xl max-w-[100%]  gap-20 justify-around">
+                {[<IoHomeOutline />, <FontAwesomeIcon icon={faUser} />, <FaNetworkWired />, <RiContactsBook2Line />].map((item, i) => {
                     const routes = ["/home", "/about-me", "/projects", "/contact"];
                     return (
                         <div
