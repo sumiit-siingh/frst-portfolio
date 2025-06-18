@@ -53,8 +53,8 @@ export default function () {
                             github_lnk: "https://github.com/sumiit-siingh/AirlineManagementSystem",
                         },
                     ].map((item, index) => (
-                        <div className="h-full ">
-                            <CardContainer className="inter-var h-full cursor-pointer" key={index}>
+                        <div className="max-h-[650px]  ">
+                            <CardContainer className=" md:m-0 m-5 h-full cursor-pointer" key={index}>
                                 <CardBody className="bg-[#282b30] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full rounded-xl p-6 border h-full flex flex-col min-h-[550px]">
 
                                     {/* Image with 3D Hover Effect */}
@@ -86,7 +86,7 @@ export default function () {
 
 
                                     {/* Tools */}
-                                    <CardItem className="mt-2 text-neutral-400 text-outline font-poppins-regular">
+                                    <CardItem className="mt-2 max-w-[400px]  font-poppins-regular">
                                         <strong className="">Tools : </strong>{item.tools}
                                     </CardItem>
 
