@@ -16,6 +16,11 @@ const Navbar = () => {
     const [isHover, setIsHover] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleWidget = () => {
+        setIsOpen(!isOpen);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,11 +32,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`h-10  w-full flex  justify-center font-[Poppins] space-x-20 z-10 fixed top-0 left-0 select-none transition-all duration-3 mt-8 rounded-full ${scrolled ? "" : "bg-transparent"}`}>
+        <div className={`h-10  w-full flex  justify-center font-[Poppins] space-x-20 z-100 fixed top-0 left-0 select-none transition-all duration-3 mt-8 rounded-full ${scrolled ? "" : "bg-transparent"}`}>
 
             {/* Logo */}
 
-            <div className='flex  bg-black p-10 rounded-full  items-center justify-center space-x-20 z-'>
+            <div className='flex  bg-black p-10 rounded-full  items-center justify-center space-x-20 '>
                 <div
                     onMouseEnter={() => setIsHover(true)}
                     onMouseLeave={() => setIsHover(false)}
@@ -47,9 +52,17 @@ const Navbar = () => {
                 </div>
 
                 {/* Hamburger icon for mobile */}
-                <div className="md:hidden text-3xl  translate-x-15  text-white cursor-pointer" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                    {isMobileMenuOpen ? '✖' : '☰'}
+                <div className='max-w-[40px]  translate-x-18'>
+                    <div
+                        className={`md:hidden w-fit  text-3xl text-white  cursor-pointer transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-180' : ''
+                            }`}
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    >
+                        {isMobileMenuOpen ? '✖' : '☰'}
+                    </div>
                 </div>
+
+
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center text-xl max-w-[100%]  gap-20 justify-around">
@@ -86,7 +99,7 @@ const Navbar = () => {
                         animate={{ x: "0%", opacity: 1 }}
                         exit={{ x: "100%", opacity: 0 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="fixed  top-20 right-0 z-[9999] w-1/8 max-w-xs backdrop-blur-xl bg-white text-white py-4 rounded-l-3xl flex flex-col items-center space-y-4 md:hidden "
+                        className="fixed  top-30 right-0 z-[9999] w-1/8 max-w-xs backdrop-blur-xl bg-white text-white py-4 rounded-l-3xl flex flex-col items-center space-y-4 md:hidden "
                     >
                         {["🏠", "🙋‍♂️", "🗂️", "📞"].map((item, i) => {
                             const routes = ["/home", "/about-me", "/projects", "/contact"];
@@ -121,7 +134,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </div>
-        </div>
+        </div >
     );
 };
 
