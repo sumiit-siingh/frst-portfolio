@@ -31,7 +31,7 @@ export default function Contact() {
             <Spotlight className="top-0 left-0 md:-top-10 md:left-40" fill="white" />
 
             {/* Heading */}
-            <div className="relative mt-20 flex flex-col items-center text-center px-4">
+            <div className="relative mt-40 flex flex-col items-center text-center px-4">
                 <div className="text-white bg-white/20 px-4 py-1 rounded-full">Get in touch</div>
                 <h1 className="text-white text-3xl font-bold mt-5">Contact Me</h1>
                 <p className="text-white/40 mt-5 max-w-2xl">

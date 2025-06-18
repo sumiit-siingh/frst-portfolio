@@ -22,7 +22,7 @@ export default function Homepage() {
       <Spotlight className="top-0 left-0 md:-top-10 md:left-40" fill="white" />
 
       {/* Top Section - Name and Photo */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 mt-20 px-6 md:px-20 w-full">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 mt-4 0 px-6 md:px-20 w-full">
 
         {/* Left Text */}
         <div className="flex flex-col items-start space-y-4 text-center md:text-left mt-10">

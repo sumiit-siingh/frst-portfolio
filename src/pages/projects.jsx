@@ -12,7 +12,7 @@ export default function () {
 
             {/* Background Spotlight */}
             <Spotlight className="top-0 left-0 md:-top-10 md:left-40" fill="white" />
-            <div className="flex flex-col mt-30 text-white relative w-full">
+            <div className="flex flex-col mt-40 text-white relative w-full">
                 {/* Wrapper div to center */}
                 <div className="flex justify-center items-center">
                     <div className="bg-white/15 flex items-center justify-center rounded-full text-white/70 text-sm  pl-4 pr-4 p-1 text-outline max-w-fit">

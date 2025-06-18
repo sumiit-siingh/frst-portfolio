@@ -15,7 +15,7 @@ export default function About() {
 
             {/* Background Spotlight */}
             <Spotlight className="top-0 left-0 md:-top-10 md:left-40" fill="white" />
-            <div className="relative flex flex-col justify-center items-center pt-30 px-4 w-full gap-y-10">
+            <div className="relative flex flex-col justify-center items-center mt-40 px-4 w-full gap-y-10">
                 <a className=" flex justify-center text-sm sm:text-md font-semibold text-white/70 bg-white/10 rounded-xl px-4 py-1">About me</a>
                 <a className="text-3xl sm:text-5xl font-bold text-white text-center">Know who I am</a>
                 <p className="text-white/50 text-center max-w-xl text-sm sm:text-base">
