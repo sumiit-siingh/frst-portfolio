@@ -32,7 +32,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`h-10  w-full flex  justify-center font-[Poppins] space-x-20 z-100 fixed top-0 left-0 select-none transition-all duration-3 mt-8 rounded-full ${scrolled ? "" : "bg-transparent"}`}>
+        <div className={`h-10  w-full flex  justify-center font-[Poppins] space-x-20 z-100 fixed top-0 left-0 select-none transition-all duration-3 md:mt-5 mt-2 rounded-full ${scrolled ? "" : "bg-transparent"}`}>
 
             {/* Logo */}
 
